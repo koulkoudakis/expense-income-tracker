@@ -4,9 +4,7 @@ Keep track of income and expenses. Add and remove items and save to local storag
 
 ## Project Specifications
 
-- Create UI for project
-- Display transaction items in DOM
-- Show balance, expense and income totals
-- Add new transation and reflect in total
-- Delete items from DOM
-- Persist to local storage
+- Displays transaction items in DOM
+- Shows balance, expense and income totals
+- Adding new transaction is reflected in total
+- Persists to local storage

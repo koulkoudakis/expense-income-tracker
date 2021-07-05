@@ -66,6 +66,8 @@ function addTransDOM (transaction) {
     )}</span> <button class="delete-btn" onclick="removeTransaction(${transaction.id})">X</button>
     `;
 
+    item.setAttribute("onclick", `removeTransaction(${transaction.id})`);
+    
     list.appendChild(item);
 }
 
@@ -89,8 +91,8 @@ function updateValues() {
     console.log(income, expense);
     
     balance.innerText = `$${total}`;
-    money_plus.innerText = `${income}`;
-    money_minus.innerText = `${expense}`;
+    money_plus.innerText = `$${income}`;
+    money_minus.innerText = `$${expense}`;
 
 }
 
@@ -118,3 +120,4 @@ function init() {
 init();
 
 form.addEventListener('submit', addTrans)
+list.addEventListener('click', removeTransaction())
